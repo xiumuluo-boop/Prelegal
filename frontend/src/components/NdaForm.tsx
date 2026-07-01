@@ -8,7 +8,7 @@ interface NdaFormProps {
 }
 
 const inputClass =
-  "w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none";
+  "w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 focus:border-gray-500 focus:outline-none";
 const labelClass = "block text-sm font-medium text-gray-700 mb-1";
 const fieldsetClass = "space-y-4 border-b border-gray-200 pb-6";
 const legendClass = "text-base font-semibold text-gray-900";
@@ -116,7 +116,7 @@ export function NdaForm({ data, onChange }: NdaFormProps) {
             <input
               type="number"
               min={1}
-              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
+              className="w-16 rounded-md border border-gray-300 bg-white px-2 py-1 text-sm text-gray-900"
               value={data.mndaTermYears}
               onChange={(e) =>
                 onChange({
@@ -155,7 +155,7 @@ export function NdaForm({ data, onChange }: NdaFormProps) {
             <input
               type="number"
               min={1}
-              className="w-16 rounded-md border border-gray-300 px-2 py-1 text-sm"
+              className="w-16 rounded-md border border-gray-300 bg-white px-2 py-1 text-sm text-gray-900"
               value={data.confidentialityYears}
               onChange={(e) =>
                 onChange({
